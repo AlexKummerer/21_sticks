@@ -5,6 +5,7 @@ GAME_TITLE = "Welcome to the Game 21 Sticks"
 PLAYER_1 = "Player 1"
 PLAYER_2 = "Player 2"
 PLAY_AGAIN_PROMPT = "Do you want to play again? (yes/no): "
+GOODBYE_MESSAGE = "Thanks for playing! Goodbye."
 
 
 def get_next_player_index(
@@ -88,6 +89,7 @@ def main():
     while True:
         two_player_game()
         if not play_again():
+            print(GOODBYE_MESSAGE)
             break
 
 if __name__ == "__main__":
